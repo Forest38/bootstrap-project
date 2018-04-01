@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #food .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+          width: 100%;
+          left: 0px;
+        }
+        .back-opacity {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          background-image: url(images/back.png);
+          opacity: 0.4;
+          z-index: -1;
+        }
+        .carousel-control {
+          padding-top: 30%;
+          font-size: 30px;
+          display: none;
+       }
+       #food:hover .carousel-control {
+         display: block;
+       }
+       @media (max-width:600px) {
+         .carousel-control, .carousel-indicators {
+           display: none;
+           font-size: 20px;
+         }
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="food" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active"><img src="https://www.cityworksrestaurant.com/pittsburgh/wp-content/uploads/sites/7/2015/11/City-Works-Food-16-600-400-web.jpg" alt="">
+                        <div class="carousel-caption">
+                        <div class="back-opacity"></div>
+                        <h3>Супер еда</h3>
+                        <button class="btn btn-success btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i> Купить</button>
+                        </div>
+                </div>
+                <div class="item"><img src="https://www.cityworksrestaurant.com/pittsburgh/wp-content/uploads/sites/7/2015/11/City-Works-Food-18-600-400-web.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="back-opacity"></div>
+                        <h3>Картошечка ням</h3>
+                        <button class="btn btn-success btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i> Купить</button>
+                    </div>
+                </div>
+                <div class="item"><img src="https://www.cityworksrestaurant.com/minneapolis/wp-content/uploads/sites/2/2018/02/BBQ-Chicken-Chopped-Salad_1-600-400-web.jpg" alt="">
+                    <div class="carousel-caption">
+                        <div class="back-opacity"></div>
+                        <h3>Лучше не бывает</h3>
+                        <button class="btn btn-success btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i> Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#food" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-backward"></span></a>
+            <a href="#food" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-forward"></span></a>
+
+            <ol class="carousel-indicators">
+                <li data-target="#food" data-slide-to="0" class="active"></li>
+                <li data-target="#food" data-slide-to="1"></li>
+                <li data-target="#food" data-slide-to="2"></li>
+            </ol>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
